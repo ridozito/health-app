@@ -1,0 +1,36 @@
+{
+  "name": "health-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node app",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "initdb": "node app/scripts/initdb.js --initdb",
+    "dummydata" :  "node app/scripts/dummy_data.js"
+  },
+  "author": "nguyen hung",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "@koa/cors": "^3.1.0",
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.2",
+    "joi": "^17.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.5.3",
+    "koa-body": "^5.0.0",
+    "koa-locales": "^1.12.0",
+    "koa-router": "^12.0.0",
+    "log4js": "^6.7.0",
+    "moment": "^2.29.4",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.21.6",
+    "sequelize-auto": "^0.8.8",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
